@@ -1,0 +1,77 @@
+# ═══════════════════════════════════════════════════════════════════
+#  JARVIS OMEGA V2 — Requirements
+#  Install: pip install -r requirements.txt
+# ═══════════════════════════════════════════════════════════════════
+
+# ── AI Brain (FREE — get key at console.groq.com) ────────────────
+groq>=0.6.0
+
+# ── GUI ──────────────────────────────────────────────────────────
+PyQt6>=6.6.0
+
+# ── Speech — TTS (Neural quality, FREE) ─────────────────────────
+edge-tts>=6.1.9
+pygame>=2.5.0
+pyttsx3>=2.90
+gTTS>=2.5.0
+
+# ── Speech — STT (Whisper offline, accurate) ────────────────────
+openai-whisper>=20231117
+pyaudio>=0.2.14
+sounddevice>=0.4.6
+numpy>=1.24.0
+SpeechRecognition>=3.10.0
+
+# ── Silero-VAD (real-time voice detection) ───────────────────────
+torch>=2.0.0
+torchaudio>=2.0.0
+
+# ── App Control — Windows UI Automation (NEW) ────────────────────
+pywinauto>=0.6.8
+pyautogui>=0.9.54
+
+# ── Web App Control — Selenium (NEW) ─────────────────────────────
+selenium>=4.18.0
+webdriver-manager>=4.0.1
+
+# ── Web & Research ───────────────────────────────────────────────
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+urllib3>=2.0.0
+
+# ── System & Utilities ───────────────────────────────────────────
+psutil>=5.9.0
+Pillow>=10.0.0
+python-dotenv>=1.0.0
+langdetect>=1.0.9
+
+# ── OCR (needs Tesseract-OCR installed separately) ───────────────
+pytesseract>=0.3.10
+
+# ── Serial (Arduino) ─────────────────────────────────────────────
+pyserial>=3.5
+
+# ── Git integration for self-improvement ─────────────────────────
+gitpython>=3.1.40
+
+# ── Audio playback fallback ──────────────────────────────────────
+playsound>=1.3.0
+
+# ═══════════════════════════════════════════════════════════════════
+# NOTES:
+#
+# PyAudio on Windows: if pip fails, download the wheel from:
+#   https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
+#   Then: pip install PyAudio‑0.2.14‑cp311‑cp311‑win_amd64.whl
+#
+# Tesseract OCR (for screen reading):
+#   Download: https://github.com/UB-Mannheim/tesseract/wiki
+#   Add to PATH after install
+#
+# Torch (for silero-VAD) can be large (~2GB).
+# If you want to skip VAD, comment out torch/torchaudio.
+# JARVIS will fall back to energy-based voice detection.
+#
+# First run: Whisper will download the model (~145MB for 'base').
+# This is cached and only happens once.
+# ═══════════════════════════════════════════════════════════════════
