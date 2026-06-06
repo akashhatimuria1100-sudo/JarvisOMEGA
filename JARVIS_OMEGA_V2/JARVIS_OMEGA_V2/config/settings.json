@@ -1,0 +1,19 @@
+{
+  "groq_api_key": "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",
+  "user_name": "Sir",
+  "ai_name": "JARVIS",
+  "wake_word": "jarvis",
+  "groq_model": "llama-3.1-70b-versatile",
+  "tts_voice": "en-US-GuyNeural",
+  "whisper_model": "base",
+  "overlay_enabled": true,
+  "self_improve": true,
+  "tts_rate": 175,
+  "tts_edge_rate": "+0%",
+  "tts_edge_pitch": "+0Hz",
+  "languages": [
+    "en-IN",
+    "hi-IN",
+    "en-US"
+  ]
+}
