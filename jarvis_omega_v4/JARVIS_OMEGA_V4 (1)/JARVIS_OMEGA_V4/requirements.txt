@@ -1,0 +1,67 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  JARVIS OMEGA V4 — Requirements (Python 3.14 Compatible)
+#  Install ALL with: pip install -r requirements.txt
+#  NO winget. NO ffmpeg. NO system installers. Pure pip only.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Core GUI ──────────────────────────────────────────────────────────────────
+PyQt6>=6.6.0
+
+# ── AI / Groq ─────────────────────────────────────────────────────────────────
+groq>=0.9.0
+
+# ── Multi-Provider Free LLMs ─────────────────────────────────────────────────
+# Google Gemini (free tier: 1,500 req/day)
+google-generativeai>=0.8.0
+# OpenRouter, NVIDIA, SambaNova, Cerebras (all use OpenAI-compatible API)
+openai>=1.35.0
+
+# ── Local LLM (offline, no API key) ───────────────────────────────────────────
+llama-cpp-python>=0.3.0
+huggingface_hub>=0.20.0
+
+# ── TTS (Text-to-Speech) — SAFE, pip-only ────────────────────────────────────
+# pyttsx3: offline, instant, male voice, works without ANY extra system install
+pyttsx3>=2.90
+
+# edge-tts: high-quality neural voices (optional, needs internet)
+# pip install edge-tts
+edge-tts>=6.1.9
+
+# ── Speech Recognition ───────────────────────────────────────────────────────
+# SpeechRecognition: Google STT — fast, works great, no model download
+SpeechRecognition>=3.10.4
+
+# sounddevice: replaces pyaudio (no Python 3.14 wheel for pyaudio)
+sounddevice>=0.4.6
+soundfile>=0.12.1
+numpy>=1.26.0
+
+# openai-whisper: OPTIONAL offline STT (needs torch — heavy download)
+# Only install if you want offline transcription without Google:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   pip install openai-whisper
+# openai-whisper
+
+# ── Computer Vision / Screenshots ────────────────────────────────────────────
+pyautogui>=0.9.54
+pillow>=10.0.0
+# pytesseract needs Tesseract binary: https://github.com/UB-Mannheim/tesseract/wiki
+# pytesseract>=0.3.10
+
+# ── Web / Search ─────────────────────────────────────────────────────────────
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.1.0
+
+# ── System utilities ─────────────────────────────────────────────────────────
+psutil>=5.9.8
+httpx>=0.27.0
+
+# ── Windows window focus (pywin32) ──────────────────────────────────────────
+pywin32>=306; platform_system == "Windows"
+
+# ── Optional extras ──────────────────────────────────────────────────────────
+# selenium                    # web browser automation
+# webdriver-manager           # auto chrome driver
+# pyserial                    # Arduino serial port

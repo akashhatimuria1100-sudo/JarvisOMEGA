@@ -1,0 +1,32 @@
+{
+  "user_name": "Sir",
+  "ai_name": "JARVIS",
+  "wake_word": "jarvis",
+  "groq_api_key": "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",
+  "groq_model": "llama-3.3-70b-versatile",
+  "whisper_model": "base",
+  "tts_voice": "en-US-GuyNeural",
+  "tts_edge_rate": "+5%",
+  "tts_edge_pitch": "-3Hz",
+  "tts_rate": 220,
+  "temperature": 0.7,
+  "max_tokens": 2048,
+  "overlay_enabled": true,
+  "self_improve": true,
+  "hinglish_mode": true,
+  "use_local_llm": true,
+  "languages": [
+    "hi-IN",
+    "en-IN",
+    "en-US"
+  ],
+  "overlay_position": [
+    null,
+    null
+  ],
+  "google_api_key": "AQ.Ab8RN6INc7AW8EcTQXjJVuB8NhdbUZJDIORJwipQGhxL68X2JQ",
+  "openrouter_api_key": "",
+  "nvidia_api_key": "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",
+  "sambanova_api_key": "6b0b355b-67b0-43c0-ab81-85ea67952bab",
+  "cerebras_api_key": "csk-mxj9wffr2xfp5d8wpm5xye9pfh689vxmfe5y8yrykj2r82er"
+}
