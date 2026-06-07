@@ -1,0 +1,24 @@
+{
+  "user_name": "Sir",
+  "ai_name": "JARVIS",
+  "wake_word": "jarvis",
+  "groq_api_key": "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",
+  "groq_model": "llama-3.3-70b-versatile",
+  "whisper_model": "base",
+  "tts_voice": "en-US-GuyNeural",
+  "tts_edge_rate": "+15%",
+  "tts_edge_pitch": "-3Hz",
+  "tts_rate": 220,
+  "temperature": 0.7,
+  "max_tokens": 2048,
+  "overlay_enabled": true,
+  "self_improve": true,
+  "languages": [
+    "en-IN",
+    "en-US"
+  ],
+  "overlay_position": [
+    null,
+    null
+  ]
+}
