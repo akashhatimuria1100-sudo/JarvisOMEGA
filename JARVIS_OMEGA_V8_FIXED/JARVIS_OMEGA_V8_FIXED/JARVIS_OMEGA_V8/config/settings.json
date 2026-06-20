@@ -1,0 +1,35 @@
+{
+  "_comment": "API keys go in .env file — do NOT put them here",
+
+  "user_name":             "Sir",
+  "ai_name":               "JARVIS",
+
+  "tts_voice":             "en-IN-PrabhatNeural",
+  "tts_edge_rate":         "+5%",
+  "tts_edge_pitch":        "+0Hz",
+  "tts_rate":              185,
+
+  "hinglish_display_mode": true,
+  "hinglish_speak_mode":   true,
+  "hindi_speak_mode":      false,
+
+  "stt_language":          "hi-en",
+  "stt_fallback_langs":    ["hi-IN", "en-IN", "en-US"],
+  "whisper_model":         "base",
+
+  "offline_mode":          false,
+  "ollama_url":            "http://localhost:11434",
+  "ollama_model":          "llama3.2",
+
+  "theme":                 "dark_blue",
+
+  "_key_info": {
+    "cerebras":   "FREE — https://cloud.cerebras.ai  (~0.3s response)",
+    "groq":       "FREE — https://console.groq.com   (~0.5s + Whisper STT)",
+    "sambanova":  "FREE — https://cloud.sambanova.ai (~1s, long context)",
+    "openrouter": "FREE — https://openrouter.ai      (fallback)",
+    "nvidia":     "FREE — https://build.nvidia.com   (fallback)",
+    "google":     "FREE — https://aistudio.google.com",
+    "ollama":     "FREE — https://ollama.ai           (offline, no internet)"
+  }
+}
